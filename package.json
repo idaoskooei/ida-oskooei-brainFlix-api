@@ -16,5 +16,8 @@
     "url": "https://github.com/idaoskooei/ida-oskooei-brainFlix-api/issues"
   },
   "homepage": "https://github.com/idaoskooei/ida-oskooei-brainFlix-api#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }

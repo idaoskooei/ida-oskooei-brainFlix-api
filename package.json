@@ -27,7 +27,6 @@
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "react-router-dom": "^6.25.1",
-    "require": "^0.4.4",
     "uuid": "^10.0.0"
   }
 }

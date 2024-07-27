@@ -41,16 +41,18 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try {
-        const { title, description} = req.body;
+        const { title, description,image} = req.body;
         const newVideo = {
             id: uuidv4(),
+            channel: "ida",
             views: Math.floor(Math.random() * 1000001).toLocaleString(),
             likes: Math.floor(Math.random() * 1000001).toLocaleString(),
             duration: "3:01",
             title,
+            video: "https://unit-3-project-api-0a5620414506.herokuapp.com/",
             description,
             timestamp: Date.now(),
-            image: '/public/images/video-thumbnail.jpg',
+            image: 'http://localhost:3000/images/video-thumbnail.jpg',
             comments: [
                 {
                     "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",

@@ -11,7 +11,7 @@ const { PORT } = process.env || 3000;
 
 app.use(cors());
 app.use(express.json());
-app.use('/public', express.static(path.join(process.cwd(), 'public', 'images')));
+app.use(express.static('public'));
 
 app.use('/videos', videos);
 

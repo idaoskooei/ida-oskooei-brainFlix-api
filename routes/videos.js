@@ -16,7 +16,6 @@ router.get('/', (_req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    // let videosArray = JSON.parse(fs.readFileSync('./data/videos.json'))
     const videoDetail = videosArray.find(video => video.id === req.params.id)
     res.json(videoDetail)
 })
